@@ -14,3 +14,16 @@
  *= require_self
  */
  @import "bootstrap";
+
+.about {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+.about1 {
+  margin-right: 8px;
+}
+
+footer {
+  text-align: center;
+}
