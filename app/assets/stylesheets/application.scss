@@ -14,8 +14,54 @@
  *= require_self
  */
  @import "bootstrap";
+ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top {
+  margin: 0 auto;
+  width: 530px;
+  
+}
+.top1 {
+  height: 70px;
+  line-height: 70px;
+  font-size: 40px;
+  display: flex;
+}
+.top1-1 {
+ margin-right: 8px;
+}
+.top1-2 {
+ margin-right: 8px;
+}
+.top2 {
+  height: 40px;
+  display: flex;
+}
+.top2-1 {
+ margin-right: 5px;
+}
+.top3 {
+ height: 40px;
+}
+.top4 {
+  width: 85%;
+  margin: 0 auto;
+}
+.top4-1,
+.top4-2 {
+  text-align: center;
+  margin-top: 16px;
+}
 
 .about {
+  height: 80px;
+  line-height: 80px;
   font-size: 40px;
   display: flex;
   justify-content: center;
@@ -24,6 +70,19 @@
   margin-right: 8px;
 }
 
+.login,
+.signup {
+  width: 79%;
+  margin: 15px auto;
+}
+
 footer {
   text-align: center;
+  height: 115px;
+  line-height: 115px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
 }
