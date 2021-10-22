@@ -1,1 +1,16 @@
 <h1>Book showページ</h1>
+
+<!--部分テンプレート呼び出す-->
+<%= render 'books/list', book: @book %>
+
+<h1>Book detail</h1>
+
+<table>
+  <tr>
+    <td>UserImage</td>
+    <td><%= link_to @books.title, book_path(@books.id) %></td>
+    <td><%= @books.body %></td>
+    <td><%= link_to "Edit", edit_book_path(@books.id) %></td>
+    <td><%= link_to "Destroy", book_path(@books.id), method: :delete, "data-confirm" => "本当に消しますか?" %></td>
+  </tr>
+</table>
