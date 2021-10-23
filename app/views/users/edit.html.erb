@@ -1,1 +1,9 @@
-<h1>User ページ</h1>
+<b>User info editページ</b>
+
+<%= form_with model: @user, url:"/users/#{@user.id}", local:true do |f| %>
+  <div class="bookedit2">Name</div>
+  <div class="bookedit3"><%= f.text_field :name, :size => "55*30" %></div>
+  <div class="bookedit4">Introduction</div>
+  <div class="bookedit5"><%= f.text_area :introduction, :size => "54*30" %></div>
+  <%= f.submit 'Update Book' %>
+<% end %>

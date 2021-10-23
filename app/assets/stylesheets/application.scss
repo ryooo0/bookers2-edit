@@ -77,14 +77,16 @@
 }
 
 .bookindex,
-.bookshow {
+.bookshow,
+.userindex {
   width: 80%;
   margin: 17px auto 0;
   display: flex;
   justify-content: center;
 }
 .bookindex-main,
-.bookshow-main {
+.bookshow-main,
+.userindex-main {
   width: 800px;
 }
 

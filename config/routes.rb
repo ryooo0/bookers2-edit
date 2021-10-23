@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   resources :books, only: [:edit, :create, :index, :show, :destroy, :update]
   post 'books/:id' => 'books#create'
   
-  resources :users, only: [:edit, :create, :index, :show, :destroy, :update]
+  resources :users, only: [:edit, :create, :index, :show, :update]
   
 end

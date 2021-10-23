@@ -1,1 +1,29 @@
-<h1>User indexページ</h1>
+<div class="userindex">
+  <div>
+    <%= render 'books/list', book: @book, user: @user %>
+  </div>
+
+  <div ="userindex-main">
+    <h2>Users</h2>
+    <table>
+      <thead>
+        <tr class="bookindex-topic" height="50">
+          <th width="70">image</th>
+          <th width="130"></th>
+          <th width="350">name</th>
+          <th width="150"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.each do |user| %>
+        <tr class="bookindex-row" height="67">
+          <td>UserImg</td>
+          <td></td>
+          <td><%= user.name %></td>
+          <td><%= link_to "Show", user_path(user.id) %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
