@@ -76,25 +76,50 @@
   margin: 15px auto;
 }
 
-.edit {
+.bookindex,
+.bookshow {
+  width: 80%;
+  margin: 17px auto 0;
+  display: flex;
+  justify-content: center;
+}
+.bookindex-main,
+.bookshow-main {
+  width: 800px;
+}
+
+.bookindex-topic{
+  border-top: solid 1px #d3d3d3;
+  border-bottom: solid 2px #d3d3d3;
+}
+.bookindex-row{
+  border-top: solid 1px #d3d3d3;
+}
+
+.bookshow-main1 {
+  padding-right: 50px;
+}
+
+
+.bookedit {
   width: 480px;
   margin: 15px auto;
 }
-.edit1 {
+.bookedit1 {
   font-size: 40px;
 }
-.edit2,
-.edit3,
-.edit4,
-.edit5 {
+.bookedit2,
+.bookedit3,
+.bookedit4,
+.bookedit5 {
   margin-bottom: 12px;
 }
-.edit-link {
+.bookedit-link {
   margin-top: 12px;
   display: flex;
 }
-.edit-link1,
-.edit-link2 {
+.bookedit-link1,
+.bookedit-link2 {
   margin-right: 4px;
 }
 
@@ -107,4 +132,16 @@ footer {
 .link {
   text-decoration: none;
   color: white;
+}
+
+.temp-main {
+  width: 400px;
+}
+.temp-name {
+  border-top: solid 1px #d3d3d3;
+  border-bottom: solid 1px #d3d3d3;
+}
+.temp-editbutton {
+  height: 30px;
+  width: 290px;
 }

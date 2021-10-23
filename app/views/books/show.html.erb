@@ -1,16 +1,22 @@
-<h1>Book showページ</h1>
+<div class="bookshow">
+  <div>
+    <%= render 'books/list', book: @book %>
+  </div>
 
-<!--部分テンプレート呼び出す-->
-<%= render 'books/list', book: @book %>
-
-<h1>Book detail</h1>
-
-<table>
-  <tr>
-    <td>UserImage</td>
-    <td><%= link_to @books.title, book_path(@books.id) %></td>
-    <td><%= @books.body %></td>
-    <td><%= link_to "Edit", edit_book_path(@books.id) %></td>
-    <td><%= link_to "Destroy", book_path(@books.id), method: :delete, "data-confirm" => "本当に消しますか?" %></td>
-  </tr>
-</table>
+  <div class="bookshow-main">
+    <h2>Book detail</h2>
+    <table>
+      <tr>
+        <td width="130">UserImage</td>
+        <td width="180"><%= link_to @books.title, book_path(@books.id) %></td>
+        <td width="150"><%= @books.body %></td>
+        <td class="btn btn-sm btn-success"><%= link_to "Edit", edit_book_path(@books.id) %></td>
+        <td width="80"></td>
+        <td class="btn btn-sm btn-danger"><%= link_to "Destroy", book_path(@books.id), method: :delete, "data-confirm" => "本当に消しますか?" %></td>
+      </tr>
+      <tr>
+        <td><%= link_to "UserName", user_path(@books.id) %></td>
+      </tr>
+    </table>
+  </div>
+</div>

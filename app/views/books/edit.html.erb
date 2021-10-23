@@ -1,18 +1,18 @@
-<div class="edit">
+<div class="bookedit">
 
-  <b class="edit1">Editing Book</b>
+  <b class="bookedit1">Editing Book</b>
 
   <%= form_with model: @book, url:"/books/#{@book.id}", local:true do |f| %>
-    <div class="edit2">Title</div>
-    <div class="edit3"><%= f.text_field :title, :size => "55*30" %></div>
-    <div class="edit4">Opinion</div>
-    <div class="edit5"><%= f.text_area :body, :size => "54*30" %></div>
+    <div class="bookedit2">Title</div>
+    <div class="bookedit3"><%= f.text_field :title, :size => "55*30" %></div>
+    <div class="bookedit4">Opinion</div>
+    <div class="bookedit5"><%= f.text_area :body, :size => "54*30" %></div>
     <input type="submit" name="commit" value="Update Book" class="btn btn-success" data-disable-with="Update Book">
   <% end %>
 
-  <div class="edit-link">
-    <div class="edit-link1"><%= link_to "Show", book_path(@book.id) %></div>
-    <div class="edit-link2">|</div>
+  <div class="bookedit-link">
+    <div class="bookedit-link1"><%= link_to "Show", book_path(@book.id) %></div>
+    <div class="bookedit-link2">|</div>
     <div><%= link_to "Back", books_path %></div>
   </div>
 </div> 
