@@ -2,7 +2,7 @@
   <h2>User info</h2>
   
   <table>
-    <tr height="20"><%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg"%></tr>
+    <tr height="20"><%= attachment_image_tag @user, :profile_image, :fill, 80, 80, format: 'jpeg', fallback: "no_image.jpg"%></tr>
     <tr class="temp-name" height="50">
       <td width="130"><b>name</b></td>
       <td width="120"><%= current_user.name %></td>
