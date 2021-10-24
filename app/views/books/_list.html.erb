@@ -5,11 +5,11 @@
     <tr height="20"><%= attachment_image_tag @user, :profile_image, :fill, 80, 80, format: 'jpeg', fallback: "no_image.jpg"%></tr>
     <tr class="temp-name" height="50">
       <td width="130"><b>name</b></td>
-      <td width="120"><%= current_user.name %></td>
+      <td width="120"><%= @user.name %></td>
     </tr>
     <tr height="50">
       <td><b>introduction</b></td>
-      <td><%= current_user.introduction %></td>
+      <td><%= @user.introduction %></td>
       
     </tr>
   </table>
