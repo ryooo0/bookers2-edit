@@ -1,5 +1,12 @@
 <div class="bookedit">
   <h2>User info</h2>
+  
+  <% if @user.errors.any? %>
+    <div class="alert2"><%= @user.errors.count %>errors prohibited this obj from being saved:</div>
+    <% @user.errors.full_messages.each do |message| %>
+      <div class="alert3">・<%= message %></div>
+    <% end %>
+  <% end %>
 
   <%= form_with model: @user, url:"/users/#{@user.id}", local:true do |f| %>
     <div class="bookedit2">Name</div>
