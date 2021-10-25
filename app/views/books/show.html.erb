@@ -7,7 +7,9 @@
     <h2 class="bookshow-topic">Book detail</h2>
     <table>
       <tr>
-        <td width="130"><%= attachment_image_tag @books.user, :profile_image, :fill, 40, 40, format: 'jpeg', fallback: "no_image.jpg", size:'40x40' %></td>
+        <td width="130">
+          <%= link_to (attachment_image_tag @books.user, :profile_image, :fill, 40, 40, format: 'jpeg', fallback: "no_image.jpg", size:'40x40'), user_path(@books.user_id) %>
+        </td>
         <td width="180"><%= link_to @books.title, book_path(@books.id) %></td>
         <td width="150"><%= @books.body %></td>
         <% if @user.id == current_user.id %>
