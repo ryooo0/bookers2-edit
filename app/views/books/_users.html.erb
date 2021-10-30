@@ -1,0 +1,22 @@
+
+  
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody id="post">
+    <% users.each do |user| %>
+      <tr>
+        <td class="text-center">
+          <%= link_to (attachment_image_tag user, :profile_image, :fill, 40, 40, format: 'jpeg', fallback: "no_image.jpg", size:'40x40'), user_path(user) %>
+        </td>
+        <td>
+          <%= link_to user.name, user_path(user) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
