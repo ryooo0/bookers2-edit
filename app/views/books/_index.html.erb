@@ -19,6 +19,7 @@
           <%= link_to post.title, book_path(post.id) %>
         </td>
         <td><%= post.body %></td>
+        
         <!--<td><%#= link_to "詳細", post_path(post) %></td>-->
         <%# if post.user == current_user %>
           <!--<td><%#= link_to "編集", edit_post_path(post) %></td>-->
@@ -27,6 +28,7 @@
         <!--  <td></td>-->
         <!--  <td></td>-->
         <%# end %>
+        
       </tr>
     <% end %>
   </tbody>
