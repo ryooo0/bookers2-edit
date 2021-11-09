@@ -7,13 +7,15 @@ class BookCommentsController < ApplicationController
       # comment.user_id = current_user.id
     comment.book_id = book.id
     comment.save
-    
+
   end
 
   def destroy
     @book = Book.find(params[:book_id])
-    BookComment.find_by(id: params[:id]).destroy
-    
+    @comment = BookComment.find(params[:id])
+    @comment.destroy
+     # BookComment.find_by(id: params[:id]).destroy
+
   end
 
   private
